@@ -20,7 +20,7 @@ describe('Testes de Integracao', () => {
                 .get(`/ola/${nome}`)
                 .end((error, res) => {
                 helpers_1.expect(res.status).to.equal(200);
-                helpers_1.expect(res.text).to.be.eql('Hello, TypeScript Course!');
+                helpers_1.expect(res.text).to.be.eql('Hello, TypeScript Course');
                 done(error);
             });
         });

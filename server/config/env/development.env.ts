@@ -8,5 +8,5 @@ module.exports = {
   serverPort: 3000,
   pgPort: 5432,
   dbURL: 'postgres://postgres:thmpv@localhost:5432/api',
-  secret: 's3cr3t'
+  secret: 'S3cr3t'
 }

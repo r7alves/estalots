@@ -21,7 +21,7 @@ describe('Testes de Integracao', () => {
       .get(`/ola/${nome}`)
       .end((error, res ) =>{
         expect(res.status).to.equal(200)
-        expect(res.text).to.be.eql('Hello, TypeScript Course!')
+        expect(res.text).to.be.eql('Hello, TypeScript Course')
         done(error)
       })
     })
