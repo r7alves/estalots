@@ -4,7 +4,7 @@ import User from '../../server/modules/User/service'
 describe('Testes Unitários do Controller', () => {
   describe('Método Create', () => {
     it('Deve criar um novo usuario', () => {
-      const novoUser = {
+      const novoUsuario = {
         id: 1,
         name: 'Novo User',
         email: 'novouser@email.com',
@@ -12,12 +12,12 @@ describe('Testes Unitários do Controller', () => {
       }
 
       const user = new User()
-      return user.create(novoUser)
-      .then(data => {
-        expect(data.dataValues).to.have.all.keys(
-          ['email', 'id', 'name','password', 'updatedAt', 'createdAt']
-        )
-      })
+      return user.create(novoUsuario)
+        .then(data => {
+          expect(data.dataValues).to.have.all.keys(
+            ['email', 'id', 'name', 'password', 'updatedAt', 'createdAt']
+          )
+        })
 
     })
   })

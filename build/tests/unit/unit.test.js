@@ -6,14 +6,14 @@ var service_1 = require("../../server/modules/User/service");
 describe('Testes Unitários do Controller', function () {
     describe('Método Create', function () {
         it('Deve criar um novo usuario', function () {
-            var novoUser = {
+            var novoUsuario = {
                 id: 1,
                 name: 'Novo User',
                 email: 'novouser@email.com',
                 password: '1234'
             };
             var user = new service_1.default();
-            return user.create(novoUser)
+            return user.create(novoUsuario)
                 .then(function (data) {
                 helpers_1.expect(data.dataValues).to.have.all.keys(['email', 'id', 'name', 'password', 'updatedAt', 'createdAt']);
             });
