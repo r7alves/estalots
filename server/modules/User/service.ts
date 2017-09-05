@@ -13,7 +13,7 @@ class User implements IUser{
   constructor(){
 
   }
- 
+  
   create(user: any){
     return model.User.create(user)
   }

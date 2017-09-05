@@ -1,6 +1,6 @@
 export default function(sequelize, DataTypes){
 
-  const User = sequelize.define('users',{
+  const User = sequelize.define('User',{
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -29,4 +29,4 @@ export default function(sequelize, DataTypes){
     }
   })
 return User
-} 
+}

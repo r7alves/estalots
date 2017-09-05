@@ -10,7 +10,7 @@ class UserController {
       message: 'OK'
     })
   }
-
+ 
   create(req: Request, res: Response){
     res.status(HTTPStatus.OK).json({
       message:'OK'

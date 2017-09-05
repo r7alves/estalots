@@ -21,6 +21,6 @@ class UserRoutes{
   }
   destroy( req: Request, res: Response){
     return userCtrl.delete(req, res)
-  }
+  } 
 }
 export default UserRoutes

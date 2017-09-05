@@ -4,7 +4,7 @@ export interface IUser {
     email: string
     password: string
 }
- 
+
 export interface IUserDetail extends IUser {
     id: number
     name: string

@@ -6,7 +6,7 @@ describe('Testes de Integracao', () => {
   'use strict'
   const config = require('../../server/config/env/config')
   const model = require('../server/models')
-
+ 
   let id
   let name
   let email
