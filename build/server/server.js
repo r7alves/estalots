@@ -1,9 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const http = require("http");
-const api_1 = require("./api/api");
-const config = require('./config/env/config')();
-const server = http.createServer(api_1.default);
-server.listen(config.serverPort);
-server.on('listening', () => console.log(`O servidor está rodando na porta ${config.serverPort}`));
-server.on('error', (error) => console.log(`Ocorreu um erro: ${error}`));
+var http = require("http");
+var api_1 = require("./api/api");
+var models = require('./models');
+var config = require('./config/env/config')();
+var server = http.createServer(api_1.default);
+models.sequelize.sync().then(function () {
+    server.listen(config.serverPort);
+    server.on('listening', function () { return console.log("O servidor est\u00E1 rodando na porta " + config.serverPort); });
+    server.on('error', function (error) { return console.log("Ocorreu um erro: " + error); });
+});

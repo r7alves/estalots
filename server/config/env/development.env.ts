@@ -10,3 +10,4 @@ module.exports = {
   dbURL: 'postgres://postgres:thmpv@localhost:5432/api',
   secret: 'S3cr3t'
 }
+ 

@@ -13,7 +13,7 @@ if (config.dbURL) {
 } else {
   var sequelize = new Sequelize(config.db, config.username, config.password);
 }
-
+ 
 fs
   .readdirSync(__dirname)
   .filter(function(file) {

@@ -29,4 +29,4 @@ export default function(sequelize, DataTypes){
     }
   })
 return User
-}
+} 

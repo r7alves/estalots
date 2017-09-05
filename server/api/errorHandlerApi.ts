@@ -9,4 +9,5 @@ export function errorHandlerApi(err: ErrorRequestHandler, req: Request, res: Res
     errorCode: 'ERR-001',
     message : 'Erro interno do servidor'
   })
-} 
+}
+ 
